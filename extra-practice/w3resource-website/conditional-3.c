@@ -1,3 +1,5 @@
+/*3. Write a C program to check whether a given number is positive or negative.*/
+
 #include<stdio.h>
 
 int main(){
