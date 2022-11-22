@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
     int a, b, c;
 
     printf("First Number: ");
@@ -12,13 +13,16 @@ int main(){
     printf("Third Number: ");
     scanf("%d", &c);
 
-    if(a>b && a>c){
+    if (a > b && a > c)
+    {
         printf("%d is greater than %d and %d\n", a, b, c);
     }
-    else if(b>a && b>c){
+    else if (b > a && b > c)
+    {
         printf("%d is greater than %d and %d\n", b, a, c);
     }
-    else{
+    else
+    {
         printf("%d is greater than %d and %d\n", c, a, b);
     }
 
