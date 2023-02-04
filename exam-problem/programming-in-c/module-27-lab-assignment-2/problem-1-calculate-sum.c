@@ -1,36 +1,31 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int calculateSum(int);
-
-int main(void)
+int calculateSum(int N)
 {
-    int n;
+    int i, sum = 0, sign = 1;
 
-    scanf("%d", &n);
-
-    printf("%d\n", calculateSum(n));
-
-    return 0;
-}
-
-int calculateSum(int n)
-{
-    int sum = 0;
-    int count = 0;
-    int i;
-
-    for(i = 1; i <= n; i++)
+    for (i = 1; i <= N; i++)
     {
-        if(count % 3 == 0)
+        sum += sign * i;
+
+        if (i % 3 == 0)
         {
-            sum -= i;
+            sign = -sign;
         }
-        else
-        {
-            sum += i;
-        }
-        count++;
     }
 
     return sum;
+}
+
+int main()
+{
+    int N;
+
+    scanf("%d", &N);
+
+    int result = calculateSum(N);
+
+    printf("%d\n", result);
+
+    return 0;
 }
