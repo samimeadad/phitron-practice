@@ -19,6 +19,8 @@ int main(){
     //Print Output
     printf("\nArea of the circle: %f", a);
     printf("\nPerimeter of the circle: %f\n", p);
+    
+    system("pause");
 
     return 0;
 }
